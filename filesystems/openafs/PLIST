@@ -11,7 +11,6 @@ bin/klog
 bin/klog.krb
 bin/klog.krb5
 bin/knfs
-bin/kpasswd
 bin/kpwvalid
 bin/livesys
 bin/pagsh

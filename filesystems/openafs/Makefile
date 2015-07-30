@@ -58,6 +58,18 @@ post-patch:
 		${CP} param.nbsd70.h param.nbsd$$i.h; \
 	done
 
+post-install:
+.if !empty(PKG_OPTIONS:Mrename-kpasswd)
+	${MV} -f ${DESTDIR}${PREFIX}/bin/kpasswd ${DESTDIR}${PREFIX}/bin/kpasswd.openafs
+.endif
+.if !empty(PKG_OPTIONS:Mkernel-module)
+.if ${OPSYS} == "SunOS" && ${OS_VERSION} == "5.11"
+		#!!TODO!! There are many variations here on where the module is in
+		#!!TODO!! WRKSRC and where it should be installed to.
+		${INSTALL_LIB} ${WRKSRC}/src/libafs/MODLOAD64/libafs.nonfs.o ${DESTDIR}${PREFIX}/lib/openafs/afs
+.endif
+.endif
+
 MAKE_ENV+=	LD_RUN_PATH=${PREFIX}/lib
 
 .include "../../mk/bsd.pkg.mk"
