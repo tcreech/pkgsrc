@@ -1,5 +1,6 @@
 $NetBSD$
 
-SHA1 (pam-afs-session-2.5.tar.gz) = 5b2ee386b840ccecd38888230a69fe986a4150a9
-RMD160 (pam-afs-session-2.5.tar.gz) = 91800f5bb07c52497dc517069cbfb92a40e2b458
-Size (pam-afs-session-2.5.tar.gz) = 441713 bytes
+SHA1 (pam-afs-session-2.6.tar.gz) = 94208511668c922f3b4cc61e2f647c0b41a3d2ae
+RMD160 (pam-afs-session-2.6.tar.gz) = 74867de566a7eef87fa10aed3b97857d5a3977af
+SHA512 (pam-afs-session-2.6.tar.gz) = e4bb4baff580a30bc5f715f993422e773d6083aa9b9e59eaa76a8a79a07e09694852ac838a2e2fdc18cf729c502fdb321fc4091a42e0ca2e45ec88e2d60b3fe1
+Size (pam-afs-session-2.6.tar.gz) = 496028 bytes

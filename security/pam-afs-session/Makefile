@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	pam-afs-session-2.5
+DISTNAME=	pam-afs-session-2.6
 CATEGORIES=	security
 MASTER_SITES=	http://archives.eyrie.org/software/afs/
 
